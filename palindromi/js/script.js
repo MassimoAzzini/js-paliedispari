@@ -3,7 +3,7 @@
 const parolaUtente = prompt('Scrivi una parola').toLowerCase();
 console.log(parolaUtente)
 
-parolaContrario(parolaUtente);
+let parolaGirata = parolaContrario(parolaUtente);
 
 function parolaContrario (parola){
 
@@ -22,7 +22,7 @@ function parolaContrario (parola){
 };
 
 
-if (parolaUtente === parolaContrario){
+if (parolaUtente == parolaGirata){
 
   console.log('parola palindroma')
 
