@@ -14,8 +14,18 @@ function parolaContrario (parola){
   console.log(reversArray)
 
   const joinArray = reversArray.join("");
-  console.log(joinArray)
-
+  
   return joinArray;
 };
+
+
+if (parolaUtente === parolaContrario){
+
+  console.log('parola palindroma')
+
+}else{
+
+  console.log('parola NON palindroma')
+
+}
 
