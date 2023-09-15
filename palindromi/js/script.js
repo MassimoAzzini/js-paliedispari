@@ -13,9 +13,12 @@ function parolaContrario (parola){
   const reversArray = splitParola.reverse();
   console.log(reversArray)
 
-  const joinArray = reversArray.join("");
+  const joinArray = reversArray.join('');
   
+  console.log(joinArray);
+
   return joinArray;
+
 };
 
 
