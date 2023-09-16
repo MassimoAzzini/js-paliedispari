@@ -1,17 +1,19 @@
 // PARI E DISPARI
 
-const pariDispari = prompt('Scegli "pari" o "dispari"').toLowerCase();
 const numeroUtente = parseInt(prompt('Scrivi un numero da 1 a 5'));
+const pariDispari = prompt('Scegli "pari" o "dispari"').toLowerCase();
+const outputMessaggio = document.getElementById('output')
 console.log(pariDispari, numeroUtente);
 
+let messaggio;
 
 // genera numero pc
 const randomPc = randomizer(1,5);
 console.log('num random pc', randomPc);
 
 function randomizer (min, max){
-    const random = Math.floor(Math.random() * (max - min + 1) + min);
-    return random;
+  const random = Math.floor(Math.random() * (max - min + 1) + min);
+  return random;
 }
 
 
@@ -42,3 +44,7 @@ if(pariDispari === sommaPariDispari){
 }
 
 console.log(messaggio);
+outputMessaggio.innerHTML = `Tu hai scelto il numero ${numeroUtente} e ${pariDispari.toUpperCase()}, il pc ha estratto il numero ${randomPc}, la somma dei numeri è ${sommaUtentePc} quindi: ${messaggio}`
+
+
+
